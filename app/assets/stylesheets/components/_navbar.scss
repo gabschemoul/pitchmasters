@@ -1,33 +1,49 @@
-.navbar-lewagon {
+.navbar-pms {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   background: white;
   padding: 16px 24px;
+  justify-content: space-between;
 }
 
-.navbar-lewagon .brand {
+.navbar-pms .brand {
   width: 40px;
 }
 
-.navbar-lewagon .navbar-lewagon-actions {
+.navbar-pms .navbar-pms-actions {
   display: flex;
   align-items: center;
+  text-decoration: none;
 }
 
-.navbar-lewagon .navbar-lewagon-actions .navbar-lewagon-link {
+.navbar-pms .navbar-pms-actions:hover {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.navbar-pms .navbar-pms-actions .navbar-pms-link {
   margin-left: 24px;
   color: #999999;
+  text-decoration: none;
 }
-.navbar-lewagon .navbar-lewagon-actions .navbar-lewagon-link:hover {
+.navbar-pms .navbar-pms-actions .navbar-pms-link:hover {
   color: #151515;
+  text-decoration: none;
 }
 
-
-.navbar-lewagon .navbar-lewagon-actions .avatar {
+.navbar-pms .navbar-pms-actions .avatar {
   margin-left: 24px;
 }
 
-.navbar-lewagon .dropdown-toggle {
+.navbar-pms .dropdown-toggle {
   cursor: pointer;
+}
+
+.navbar-pms .navbar-pms-actions .navbar-pms-link .dropdown-toggle {
+  margin: 0;
+}
+
+.navbar-pms .navbar-pms-actions .navbar-pms-link .dropdown-menu {
+  margin: 0;
 }
