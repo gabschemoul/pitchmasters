@@ -10,3 +10,7 @@
 console.log("Hello from app/javascript/packs/application.js!");
 
 import 'bootstrap';
+
+//= require jquery3
+//= require popper
+//= require bootstrap-sprockets
