@@ -1,4 +1,23 @@
 // Specific CSS for your home-page
 .presentation {
   display: flex;
+  // margin-top: 20px;
 }
+
+.presentation-text {
+  margin-right: 10px;
+}
+
+.presentation-image {
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+h2 {
+  text-align: left;
+}
+
+.presentation p {
+  text-align: justify;
+}
+
