@@ -5,10 +5,15 @@
   justify-content: space-evenly;
 }
 
-.logo img {
-  width: 100px;  /* Or whatever */
-  height: 100px; /* Or whatever */
-  margin: auto;
+.logo {
+width: 33%;
+max-height: 160px;
+max-width: 160px;
+padding: 30px 15px;
+margin: 0 15px;
+// border-right: 1px solid rgba(0, 0, 0, .3);
+// border-bottom: 1px solid rgba(0, 0, 0, .3);
+display: flex;
+align-items: center;
+// filter: grayscale(100%);
 }
-
-img {}
