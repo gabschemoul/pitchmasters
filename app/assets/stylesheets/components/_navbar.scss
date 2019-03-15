@@ -1,13 +1,23 @@
 .navbar-pms {
   display: flex;
   align-items: center;
-  background: white;
+  background-color: $pink;
   padding: 16px 24px;
   justify-content: space-between;
+  color: $yellow;
+}
+
+.navbar-pms a {
+  color: $yellow;
+  font-family: $navbar-font;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: .1em;
+  text-transform: uppercase;
 }
 
 .navbar-pms .brand {
-  width: 40px;
+  height: 25px;
 }
 
 .navbar-pms .navbar-pms-actions {
