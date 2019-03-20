@@ -8,7 +8,6 @@
   font-size: 12px;
 }
 
-
 .btn-dark-background {
   color: $gray;
   border: solid 2px $yellow;
@@ -29,4 +28,33 @@
 
 .btn-light-background:hover {
   opacity: 1;
+}
+
+
+
+
+.btn2 {
+  padding: 15px 25px;
+  font-weight: 900;
+  font-family: $button-font;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  font-size: 14px;
+}
+
+.btn2:hover {
+  text-decoration: none;
+}
+
+
+.btn2-dark-background {
+  color: white;
+  border-left: solid 13px $yellow;
+  /*outline: solid 2px rgba(0, 0, 0, .3);*/
+  background: $pink;
+  transition: all 0.3s ease;
+}
+.btn2-dark-background:hover {
+  background: transparent;
+  color: $yellow; 
 }

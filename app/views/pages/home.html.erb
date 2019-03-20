@@ -1,7 +1,10 @@
 <div class="banner">
   <div class="container">
-    <h1>Devenez des maîtres du pitch</h1>
-    <%= link_to "Contact us", "contact", class: "btn btn-dark-background" %>
+    <h1>Devenez un maître dans l'art du pitch.</h1>
+    <h2>
+      Nous développons des méthodes et des ateliers impactants<br/>pour vous permettre de mieux pitcher vos projets.
+    </h2>
+    <%= link_to "Contact us", "contact", class: "btn2 btn2-dark-background" %>
   </div>
 </div>
 
@@ -9,7 +12,18 @@
 
   <div class="row">
     <div class="customers">
-      <%= image_tag "logos/ratp-group.png", alt: "Logo Groupe RATP", class: "logo-customers" %>
+      <div class="customers-title">
+        <h4>
+          Trusted by
+        </h4>
+      </div>
+      <div class="customers-logos">
+        <%= image_tag "logos/ratp-group.png", alt: "Logo customer Groupe RATP", class: "customers-logo" %>
+        <%= image_tag "logos/chanel.png", alt: "Logo customer Chanel", class: "customers-logo" %>
+        <%= image_tag "logos/business-france.png", alt: "Logo customer Business France", class: "customers-logo" %>
+        <%= image_tag "logos/laposte.png", alt: "Logo client Groupe Laposte", class: "customers-logo" %>
+        <%= image_tag "logos/bva.png", alt: "Logo client Groupe BVA", class: "customers-logo" %>
+      </div>
     </div>
   </div>
 
