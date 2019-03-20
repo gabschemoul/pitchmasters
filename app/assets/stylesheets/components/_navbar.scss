@@ -1,8 +1,8 @@
 .navbar-pms {
   display: flex;
   align-items: center;
-  background-color: $pink;
-  padding: 16px 24px;
+  background-color: $purple;
+  padding: 40px 40px !important;
   justify-content: space-between;
   color: $yellow;
 }
@@ -12,8 +12,15 @@
   font-family: $navbar-font;
   font-size: 12px;
   font-weight: 900;
-  letter-spacing: .1em;
+  padding: 0px 20px !important;
+  letter-spacing: .2em;
   text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+.navbar-pms a:hover {
+  color: $pink;
+  text-decoration: none;
 }
 
 .navbar-pms .brand {

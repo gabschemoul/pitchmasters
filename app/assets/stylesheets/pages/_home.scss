@@ -1,4 +1,22 @@
 // Specific CSS for your home-page
+
+body
+{
+  color: white;
+}
+
+::-moz-selection { background: $yellow; }
+::selection { background: $yellow; }
+
+
+
+.customers .logo-customers {
+  height: 100px;
+}
+
+
+
+
 .presentation {
   display: flex;
   // margin-top: 20px;

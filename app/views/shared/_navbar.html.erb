@@ -1,11 +1,12 @@
 <div class="navbar-pms py-3 px-4">
-  <a href="#">
+  <a href="/">
     <%= image_tag("pitch-master-logo.png", :class => "brand") %>
   </a>
   <!-- displayed on laptops -->
   <div class="nav-bar-right d-flex align-items-center">
     <%= link_to "Accueil", "/", class: "px-3 d-none d-sm-block" %>
-    <%= link_to "Qui sommes-nous ?", "about", class: "px-3 d-none d-sm-block" %>
+    <!--
+    %= link_to "Qui sommes-nous ?", "about", class: "px-3 d-none d-sm-block" %>
     <div class="dropdown px-3 d-none d-sm-block">
       <a href="#" data-toggle="dropdown" class="dropdown-toggle navbar-pms-link">Nos produits</a>
         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -14,7 +15,8 @@
           <a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i> Collaborateur to ambassadeur</a>
         </div>
      </div>
-    <%= link_to "Notre événement", "#", class: "px-3 d-none d-sm-block" %>
+    %= link_to "Notre événement", "#", class: "px-3 d-none d-sm-block" %>
+-->
     <%= link_to "Contact", "contact", class: "px-3 d-none d-sm-block" %>
   </div>
 
