@@ -1,14 +1,13 @@
 // Import Google fonts
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Raleway:400,100,300,700,500");
-@import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i');
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP:100,300,400,500,700,900&subset=japanese');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500,500i,700,700i,800,800i,900,900i');
+
 
 // Define fonts for body and headers
-$body-font: "Lato", "Open Sans", "Helvetica", "sans-serif";
-$navbar-font: 'Lato', "sans-serif";
-$button-font: 'Lato', "sans-serif";
-$headers-font: "Lato", "Raleway", "Helvetica", "sans-serif";
-$japanese-font: "Noto Sans JP", "sans-serif";
+$body-font: "Montserrat", "sans-serif";
+$navbar-font: "Montserrat", "sans-serif";
+$button-font: "Montserrat", "sans-serif";
+$headers-font: "Montserrat", "sans-serif";
+
 
 
 // To use a font file (.woff) uncomment following lines

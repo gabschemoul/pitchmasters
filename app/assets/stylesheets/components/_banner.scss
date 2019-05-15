@@ -1,9 +1,10 @@
 .banner {
   /*background-image: url('homepage/cover.jpg');
   background-size: cover;
-  background-position: center;*/
-  height: 70vh;
-  background-color: $purple;
+  background-position: center;
+  height: 50vh;*/
+  background: $blue;
+  padding: 5vh 0 10vh 0;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -13,42 +14,21 @@
 
 .banner h1 {
   margin: 0;
-  color: white;
+  color: $white;
   font-size: 52px;
   font-weight: 900;
   padding-bottom: 50px;
   z-index: 100;
+  text-transform: uppercase;
 }
 
-.banner h2 {
+.banner h3 {
   text-align: center;
-  color: white;
-  font-size: 20px;
-  font-weight: 500;
-  padding-bottom: 15vh;
+  color: $white;
+  font-size: 23px;
+  font-weight: 700;
+  padding-bottom: 7vh;
   line-height: 1.5em;
-  letter-spacing: .1em;
   z-index: 100;
+  text-transform: none !important;
 }
-
-
-
-.japanese-background
-{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  font-family: $japanese-font;
-  font-size: 250px;
-  color: $purple;
-  text-shadow: -3px 0 $light-pink, 0 3px $light-pink, 3px 0 $light-pink, 0 -3px $light-pink;
-  font-weight: 900;
-  white-space: nowrap;
-  font-style: italic;
-  -ms-transform: rotate(-10deg); /* IE 9 */
-  -webkit-transform: rotate(-10deg); /* Safari */
-  transform: rotate(-10deg);
-}
-

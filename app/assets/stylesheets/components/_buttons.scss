@@ -1,33 +1,30 @@
 .btn {
   padding: 14px 45px;
-  border-radius: 100em;
   font-weight: 900;
   font-family: $button-font;
   text-transform: uppercase;
-  letter-spacing: .2em;
-  font-size: 12px;
+  font-size: 17px;
 }
 
 .btn-dark-background {
-  color: $gray;
-  border: solid 2px $yellow;
+  color: $black;
   background: $yellow;
-  transition: background 0.3s ease;
+  transition: all 0.3s ease;
 }
 .btn-dark-background:hover {
-  background: transparent;
-  color: $yellow;
+  background: $cyan;
+  color: $black;
 }
 
 .btn-light-background {
-  color: #4A4A4A;
-  border: 2px solid #4A4A4A;
-  opacity: 0.6;
-  transition: opacity 0.3s ease;
+  color: $white;
+  background: $black;
+  transition: all 0.3s ease;
 }
 
 .btn-light-background:hover {
-  opacity: 1;
+  background: $cyan;
+  color: $black;
 }
 
 

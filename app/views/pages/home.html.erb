@@ -1,57 +1,337 @@
-<div class="banner">
-  <div class="japanese-background">
-    四五六七八九十
-  </div>
-  <div class="container">
-    <h1>Devenez un maître dans l'art du pitch.</h1>
-    <h2>
-      Nous développons des méthodes et des ateliers impactants<br/>pour vous permettre de mieux pitcher vos projets.
-    </h2>
-    <%= link_to "Contact us", "contact", class: "btn2 btn2-dark-background" %>
+<div class="hero">
+  <div class="navbar-pms py-3 px-4">
+    <a href="/">
+      <%= image_tag("pitch-masters-logo.png", :class => "brand") %>
+    </a>
+    <!-- displayed on laptops -->
+    <div class="nav-bar-right d-flex align-items-center">
+      <%= link_to "Contact", "contact", class: "px-3 d-none d-sm-block" %>
+    </div>
+
+
+    <!-- displayed on phone / tablet --
+    <div class="navbar-lewagon-actions d-block d-sm-none">
+      <div class="dropdown">
+        <i class="fas fa-bars" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+          <a href="#" class="dropdown-item"><i class="fas fa-home"></i> Accueil</a>
+          <a href="#" class="dropdown-item"><i class="fas fa-comments"></i> Qui sommes-nous ?</a>
+          <a class="dropdown-item" href="#"><i class="fas fa-user"></i> Événementiel innovation</a>
+          <a class="dropdown-item" href="#"><i class="fas fa-cogs"></i> Accompagnement projet</a>
+          <a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i> Collaborateur to ambassadeur</a>
+          <a class="dropdown-item" href="#"><i class="fas fa-cogs"></i> Notre événement</a>
+          <a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i> Contact</a>
+        </div>
+      </div>
+    </div>
+  </div>-->
+
+  <div class="banner">
+    <div class="container">
+      <h1>Devenez les maitres du pitch !</h1>
+      <h3>
+        Vivez une expérience transformante et développez votre leadership grâce à<br/>nos workshops en prise de parole inspirés de la scène startup
+      </h3>
+      <%= link_to "Découvrez nos workshops", "contact", class: "btn btn-dark-background" %>
+    </div>
   </div>
 </div>
 
 <div class="container">
-
   <div class="row">
     <div class="customers">
-      <div class="customers-title">
-        <h4>
-          Trusted by
-        </h4>
-      </div>
       <div class="customers-logos">
-        <%= image_tag "logos/ratp-group.png", alt: "Logo customer Groupe RATP", class: "customers-logo" %>
-        <%= image_tag "logos/chanel.png", alt: "Logo customer Chanel", class: "customers-logo" %>
-        <%= image_tag "logos/business-france.png", alt: "Logo customer Business France", class: "customers-logo" %>
-        <%= image_tag "logos/laposte.png", alt: "Logo client Groupe Laposte", class: "customers-logo" %>
-        <%= image_tag "logos/bva.png", alt: "Logo client Groupe BVA", class: "customers-logo" %>
+        <%= image_tag "logos/chanel-white.png", alt: "Logo customer Chanel", class: "customers-logo" %>
+        <%= image_tag "logos/anticafe-white.png", alt: "Logo client Anticafé", class: "customers-logo" %>
+        <%= image_tag "logos/laposte-white.png", alt: "Logo client Groupe Laposte", class: "customers-logo" %>
+        <%= image_tag "logos/ratp-group-white.png", alt: "Logo customer Groupe RATP", class: "customers-logo" %>
+        <%= image_tag "logos/business-france-white.png", alt: "Logo customer Business France", class: "customers-logo" %>
+        <%= image_tag "logos/cci-nouvelle-aquitaine-white.png", alt: "Logo client CCI Nouvelle-Aquitaine", class: "customers-logo" %>
+        <%= image_tag "logos/bva-white.png", alt: "Logo client Groupe BVA", class: "customers-logo" %>
       </div>
     </div>
+    <div class="bottom-customers-homepage">
+      <svg viewBox="0 0 1440 48"
+          version="1.1" xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink">
+        <title>Bottom of hero</title>
+        <desc>By Gabriel Schemoul</desc>
+            <path fill="#fff"  d="M0 0   c 194.22 23.31 345.236 37.383 453.045 42.218   C 539.007 46.073 627.992 48 720 48   c 265.097 0 505.097-16 720-48   v 49   H 0   V 0   z"/>
+      </svg>
+    </div>
   </div>
+  
+  
+  
+
+  
 
   <div class="row">
     <div class="presentation">
-      <div class="presentation-text">
-        <h2>Présentation</h2>
-        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+      <div class="presentation-intro">
+        <h2>De quelle <span class="important-word">planète</span> vient-on ?</h2>
+        <p>
+          Issus de la scène startup, nous accompagnons depuis 5 ans les entrepreneurs, les collaborateurs de grands groupes et les dirigeants d'entreprises dans leurs prises de parole sur scène, dans les média et sur grands salons internationaux. Forts de cette expérience, nous avons développé <b>différents workshops thématiques</b> qui vous permettront de créer un pitch efficace et impactant dans toutes <b>les situations stratégiques</b> pour votre entreprise.
+        </p>
+        <div class="infos-presentation-intro">
+          <div>
+            
+          </div>
+        </div>
       </div>
-      <div class="presentation-image">
-<!--         <%= image_tag "logo.jpg", alt: "Le Wagon", width: 200 %> -->
-        <img src="https://picsum.photos/400/200?random=1"/>
+      <%= image_tag "homepage/3pictures.png", alt: "Pitch My Startup Event WeWork Startup", class: "presentation-image" %>
+        <!--<= image_tag "homepage/wework-pitchmystartup.jpg", alt: "Pitch My Startup Event WeWork Startup", class: "presentation-image" %>-->
+    </div>
+  </div>
+  
+  
+  
+  
+  <div class="row">
+    <div class="features">
+      <h2>
+        Vivez une <span class="important-word">expérience</span> transformante !
+      </h2>
+      <div class="features-list">
+        <div class="feature">
+          <%= image_tag "homepage/features/business-driven.png", alt: "picto features business driven", class: "business-driven-feature" %>
+          <h4>
+            Business-driven
+          </h4>
+          <p>
+            Nous prenons en compte votre vision et vos enjeux business pour créer un pitch efficace et impactant au regard de vos objectifs stratégiques.
+          </p>
+        </div>
+        <div class="feature">
+          <%= image_tag "homepage/features/collective-intelligence.png", alt: "picto features collective intelligence", class: "collective-intelligence-feature" %>
+          <h4>
+            Collective intelligence
+          </h4>
+          <p>
+            Nous sommes convaincus que la dynamique de groupe permet d'apprendre les uns des autres, d'aller plus vite, plus loin, et d'être plus créatif. 
+          </p>
+        </div>
+        <div class="feature">
+          <%= image_tag "homepage/features/human-oriented.png", alt: "picto features human oriented", class: "human-oriented-feature" %>
+          <h4>
+            Human-oriented
+          </h4>
+          <p>
+            Nous co-construisons avec vous une prise de parole qui vous ressemble et qui prend en compte votre histoire, votre personnalité et vos envies.
+          </p>
+        </div>
+        <div class="feature">
+          <%= image_tag "homepage/features/innovative-mindset.png", alt: "picto features innovation", class: "innovation-feature" %>
+          <h4>
+            Innovative Mindset
+          </h4>
+          <p>
+            Nous vous challengons sans langue de bois et utilisons notre expérience du monde des startups pour vous permettre de développer une vision et un projet unique et innovant. 
+          </p>
+        </div>
+        <div class="feature">
+          <%= image_tag "homepage/features/energy.png", alt: "picto features energy", class: "positive-energy-feature" %>
+          <h4>
+            Positive Energy
+          </h4>
+          <p>
+            Nous sommes persuadés qu'avec bienveillance et détermination, vous pouvez déplacer des montagnes, et qu'il n'y a pas de limite à ce que vous pouvez accomplir.
+          </p>
+        </div>
+        <div class="feature">
+          <%= image_tag "homepage/features/life-changing.png", alt: "picto features life-changing experience", class: "life-changing-feature" %>
+          <h4>
+            Life-changing experience
+          </h4>
+          <p>
+            Nous pensons nos workshops comme des expériences uniques d'échanges et de découvertes durant lesquelles vous dépasserez vos limites et développerez votre potentiel !
+          </p>
+        </div>
       </div>
     </div>
   </div>
+  
+  
+  
+  
+  
+  
+  <div class="row">
+    <div class="products-homepage">
+      <h2>
+        Le pitch au coeur de nos <span class="important-word">produits</span>
+      </h2>
+      <div class="list-products-homepage">
+        <div class="product-homepage">
+          <h4>
+            Pitch Fair
+          </h4>
+          <div class="content-product-homepage">
+            <p class="catchphrase-product-homepage">
+              Savoir prendre la parole sur salon de façon à maximiser son ROI
+            </p>
+            <p class="description-product-homepage">
+              <b>Pour qui</b><br>Startups, PME
+              <br><br>
+              <b>Dans quel cadre</b><br>Salon internationaux et grands événements innovation
+              <br><br>
+              <b>Langues</b><br>Français, anglais
+            </p>
+            <p class="infos-product-homepage">
+              <i class="fas fa-user-alt"></i> 5-16 participants<br>
+              <i class="fas fa-clock"></i> 1/2 journée + option 2h de coaching individuel
+            </p>
+            <%= link_to "Commander", "contact", class: "btn btn-light-background" %>
+          </div>
+        </div>
+        <div class="product-homepage">
+          <h4>
+            Pitch Camp
+          </h4>
+          <div class="content-product-homepage">
+            <p class="catchphrase-product-homepage">
+              Savoir pitcher sa startup et adapter son message en fonction de son auditoire et de ses objectifs business
+            </p>
+            <p class="description-product-homepage">
+              <b>Pour qui</b><br>Startups et projets intrapreneuriaux
+              <br><br>
+              <b>Dans quel cadre</b><br>Programme d’incubation, d’accélération et d’intrapreneuriat, Demo-Day, Pitch codir
+              <br><br>
+              <b>Langues</b><br>Français, anglais
+            </p>
+            <p class="infos-product-homepage">
+              <i class="fas fa-user-alt"></i> 5-16 participants<br>
+              <i class="fas fa-clock"></i> Masterclass + 2x 1/2 journée + option 2x 2h de coaching individuel
+            </p>
+            <%= link_to "Commander", "contact", class: "btn btn-light-background" %>
+          </div>
+        </div>
+        <div class="product-homepage">
+          <h4>
+            Pitch Now
+          </h4>
+          <div class="content-product-homepage">
+            <p class="catchphrase-product-homepage">
+              Savoir présenter son entreprise, répondre aux question et adapter son message en fonction de ses interlocuteurs et de ses enjeux business
+            </p>
+            <p class="description-product-homepage">
+              <b>Pour qui</b><br>Entrepreneurs, managers, C-Level
+              <br><br>
+              <b>Dans quel cadre</b><br>Interview, table ronde, radio, télévision, vidéo
+              <br><br>
+              <b>Langues</b><br>Français, anglais
+            </p>
+            <p class="infos-product-homepage">
+              <i class="fas fa-user-alt"></i> 8 participants max<br>
+              <i class="fas fa-clock"></i> 1/2 journée + option 2h de coaching individuel
+            </p>
+            <%= link_to "Commander", "contact", class: "btn btn-light-background" %>
+          </div>
+        </div>
+        <div class="product-homepage">
+          <h4>
+            Pitch Heroes
+          </h4>
+          <div class="content-product-homepage">
+            <p class="catchphrase-product-homepage">
+              Savoir parler de son entreprise, de son job et de sa mission de façon courte et inspirante
+            </p>
+            <p class="description-product-homepage">
+              <b>Pour qui</b><br>Collaborateurs d'entreprise
+              <br><br>
+              <b>Dans quel cadre</b><br>Au quotidien, événement en interne, situation de networking, salon
+              <br><br>
+              <b>Langues</b><br>Français, anglais
+            </p>
+            <p class="infos-product-homepage">
+              <i class="fas fa-user-alt"></i> 5-32 participants<br>
+              <i class="fas fa-clock"></i> 1x ou 2x 1/2 journée(s)
+            </p>
+            <%= link_to "Commander", "contact", class: "btn btn-light-background" %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  
+  
+  <!--
+  <div class="row">
+    <div class="call-to-action-homepage">
+      <h2>
+        Prêts à devenir les maitre du pitch ?
+      </h2>
+      <p>
+        Faîtes appel à nos experts et développez vos skills en prise de parole
+      </p>
+      <= link_to "Je veux ça", "contact", class: "btn btn-light-background" %>
+    </div>
+  </div>
+  -->
+  
+  
+  <!--
+  <div class="row">
+    <div class="how-it-works">
+      <h2>
+        <span class="important-word">comment</span> ça fonctionne
+      </h2>
+      <div class="steps-list">
+        <div class="step">
+          <h4>
+            Le Brief
+          </h4>
+        </div>
+        <div class="step">
+          <h4>
+            Le Matching
+          </h4>
+        </div>
+        <div class="step">
+          <h4>
+            La Préparation
+          </h4>
+        </div>
+        <div class="step">
+          <h4>
+            Le Workshop
+          </h4>
+        </div>
+        <div class="step">
+          <h4>
+            L'After
+          </h4>
+        </div>
+      </div>
+    </div>
+  </div>
+  -->
+  
+  
+  <!--
+  <div class="row">
+    <div class="origin">
+      <div class="origin-text">
+        <h2>Ce qui nous rend <span class="important-word">différent</span> des autres</h2>
+        <p>On débarque tout droit de la scène startup !<br><br>Il y a 5 ans, on a fondé Pitch My Startup, l’un des grands événements de pitch de l’écosystème startup parisien. Du coup, la prise de parole n’a plus beaucoup de secrets pour nous.</p>
+      </div>
+    </div>
+  </div>
+  -->
+        
 
-  <hr/>
 
+<!--
   <div class="row">
     <div class="fonctionnement">
       <h2>Notre mode de fonctionnement</h2>
       <div class="etapes">
         <div class="etape">
           <div class="icone">
-            <%= image_tag "avatar.jpg", class:"avatar-bordered" %>
+            <= image_tag "avatar.jpg", class:"avatar-bordered" %>
           </div>
           <div class="text-ingredient">
             <h2>Etape 1</h2>
@@ -60,7 +340,7 @@
         </div>
         <div class="etape">
           <div class="icone">
-            <%= image_tag "avatar.jpg", class:"avatar-bordered" %>
+            <= image_tag "avatar.jpg", class:"avatar-bordered" %>
           </div>
           <div class="text-ingredient">
             <h2>Etape 2</h2>
@@ -69,7 +349,7 @@
         </div>
         <div class="etape">
           <div class="icone">
-            <%= image_tag "avatar.jpg", class:"avatar-bordered" %>
+            <= image_tag "avatar.jpg", class:"avatar-bordered" %>
           </div>
           <div class="text-ingredient">
             <h2>Etape 3</h2>
@@ -80,12 +360,12 @@
     </div>
   </div>
 
-  <hr/>
+
 
   <h2>Nos produits</h2>
   <div class="row">
     <div class="col-xs-12 col-sm-4">
-      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(<%= image_path ("avatar")%>);">
+      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(<= image_path ("avatar")%>);">
         <div class="card-description">
           <h2>Evénementiel Innovation</h2>
           <p>the best</p>
@@ -94,7 +374,7 @@
       </div>
     </div>
     <div class="col-xs-12 col-sm-4">
-      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(<%= image_path ("avatar")%>);">
+      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(<= image_path ("avatar")%>);">
         <div class="card-description">
           <h2>Collaborateur to Ambassadeur</h2>
           <p>the best</p>
@@ -103,7 +383,7 @@
       </div>
     </div>
     <div class="col-xs-12 col-sm-4">
-      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(<%= image_path ("avatar")%>);">
+      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(<= image_path ("avatar")%>);">
         <div class="card-description">
           <h2>Coaching projet</h2>
           <p>the best</p>
@@ -119,15 +399,15 @@
   <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
-<!--         <%= image_tag "avatar.jpg", class:"d-block w-100" %> -->
+<!--         <= image_tag "avatar.jpg", class:"d-block w-100" %> ->
         <img src="https://picsum.photos/1110/200?random=1"/>
       </div>
       <div class="carousel-item">
-<!--         <%= image_tag "avatar.jpg", class:"d-block w-100" %> -->
+<!--         <= image_tag "avatar.jpg", class:"d-block w-100" %> ->
         <img src="https://picsum.photos/1110/200?random=2"/>
       </div>
       <div class="carousel-item">
-<!--         <%= image_tag "avatar.jpg", class:"d-block w-100" %> -->
+<!--         <= image_tag "avatar.jpg", class:"d-block w-100" %> ->
         <img src="https://picsum.photos/1110/200?random=3"/>
       </div>
     </div>
@@ -145,5 +425,5 @@
 
   <%= render "shared/contact" %>
 
-
-</div>
+-->
+                                          </div>
