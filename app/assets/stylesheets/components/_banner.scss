@@ -1,10 +1,5 @@
 .banner {
-  /*background-image: url('homepage/cover.jpg');
-  background-size: cover;
-  background-position: center;
-  height: 50vh;*/
   background: $blue;
-  padding: 5vh 0 5vh 0;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -15,9 +10,7 @@
 .banner h1 {
   margin: 0;
   color: $white;
-  font-size: 52px;
   font-weight: 900;
-  padding-bottom: 30px;
   z-index: 100;
   text-transform: uppercase;
 }
@@ -25,10 +18,68 @@
 .banner h3 {
   text-align: center;
   color: $white;
-  font-size: 23px;
   font-weight: 700;
-  padding-bottom: 70px;
-  line-height: 1.5em;
   z-index: 100;
   text-transform: none !important;
 }
+
+
+
+
+@media screen and (min-width: 1000px) {
+  .banner {
+    padding: 45px 0;
+  }
+
+  .banner h1 {
+    font-size: 52px;
+    padding-bottom: 30px;
+  }
+
+  .banner h3 {
+    font-size: 23px;
+    padding-bottom: 70px;
+    line-height: 1.5em;
+  }
+}
+
+
+
+@media screen and (min-width: 480px) and (max-width: 1000px) {
+  .banner {
+    padding: 40px 0;
+  }
+
+  .banner h1 {
+    font-size: 45px;
+    padding: 0 20px 30px 20px;
+  }
+
+  .banner h3 {
+    font-size: 18px;
+    padding: 0 20px 40px 20px;
+    line-height: 1.5em;
+  }
+}
+
+
+
+@media screen and (max-width: 480px) {
+  .banner {
+    padding: 30px 0;
+  }
+
+  .banner h1 {
+    font-size: 30px;
+    padding: 30px 10px;
+  }
+
+  .banner h3 {
+    font-size: 15px;
+    padding: 20px 20px 70px 20px;
+    line-height: 1.5em;
+  }
+}
+
+
+

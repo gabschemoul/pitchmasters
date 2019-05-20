@@ -292,7 +292,7 @@ p {
 
   h2 {
     font-size: 40px;
-    padding-bottom: 40px;
+    margin-bottom: 40px;
   }
   
   .important-word {
@@ -453,18 +453,12 @@ p {
 
 
 @media screen and (min-width: 480px) and (max-width: 1000px) {
-  .bottom-customers-homepage {
-  background: $pink;
-}
-  
-  .customers {
-  background: $pink;
-}
   
   
   h2 {
     font-size: 30px;
-    padding-bottom: 40px;
+    margin-bottom: 20px;
+    line-height: 1.6em;
   }
   
   p {
@@ -492,7 +486,7 @@ p {
   }
 
   .customers .customers-logo {
-    height: 30px;
+    height: 35px;
   }
 
   .bottom-customers-homepage {
@@ -517,7 +511,7 @@ p {
   }
 
   .presentation-image {
-    width: 80%;
+    width: 90%;
   }
   
   
@@ -528,17 +522,18 @@ p {
   // FEATURES
 
   .features {
-    padding: 100px 0;
+    padding: 50px 0 100px 0;
   }
 
   .features-list {
     padding: 0 10%;
     align-items: baseline;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 
   .feature {
-    width: 30%;
+    width: 350px;
     margin-top: 30px;
   }
 
@@ -571,6 +566,10 @@ p {
     padding: 20px 0;
   }
   
+  .feature p {
+    padding: 0 10%;
+  }
+  
   
   
   
@@ -578,7 +577,7 @@ p {
   // PRODUCTS
 
   .products-homepage {
-    padding-top: 130px;
+    padding-top: 90px;
   }
 
   .list-products-homepage {
@@ -586,7 +585,7 @@ p {
   }
 
   .product-homepage {
-    width: 500px;
+    width: 460px;
     margin: 0 20px 100px 20px;
   }
 
@@ -628,4 +627,171 @@ p {
 
 
 
+@media screen and (max-width: 480px) {
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+    line-height: 1.6em;
+    padding: 0 20px;
+  }
+  
+  p {
+    font-size: 16px;
+  }
+  
+ .important-word {
+    padding: 3px 8px;
+    border-radius: 5px;
+  }
+  
+  
+  
+  
+  // CUSTOMERS
+
+  .customers {
+    display: none;
+  }
+
+  .bottom-customers-homepage {
+    margin-bottom: 30px;
+  }
+  
+  
+  
+  
+  // PRESENTATION
+
+  .presentation {
+    margin: 40px 0;
+  }
+
+  .presentation-intro {
+    margin-bottom: 50px;
+  }
+
+  .presentation-intro p {
+    padding: 0 10%;
+  }
+
+  .presentation-image {
+    width: 90%;
+  }
+  
+  
+  
+  
+  
+  
+  // FEATURES
+
+  .features {
+    padding: 50px 0 50px 0;
+  }
+
+  .features-list {
+    padding: 0 10%;
+    align-items: baseline;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .feature {
+    width: 350px;
+    margin-top: 30px;
+  }
+
+  .feature img {
+    width: 60%;
+  }
+
+  .collective-intelligence-feature {
+    width: 65% !important;
+  }
+
+  .innovation-feature {
+    width: 43% !important;
+  }
+
+  .human-oriented-feature {
+    width: 70% !important;
+  }
+
+  .positive-energy-feature {
+    width: 42% !important;
+  }
+
+  .life-changing-feature {
+    width: 52% !important;
+  }
+
+  .feature h4 {
+    font-size: 20px;
+    padding: 20px 0;
+  }
+  
+  .feature p {
+    padding: 0 10%;
+  }
+  
+  
+  
+  
+  
+  // PRODUCTS
+
+  .products-homepage {
+    padding-top: 90px;
+  }
+
+  .list-products-homepage {
+    margin-top: 40px;
+  }
+
+  .product-homepage {
+    width: 90%;
+    margin: 0 20px 100px 20px;
+  }
+
+  .product-homepage h4 {
+    font-size: 23px;
+    padding: 30px 0;
+  }
+
+  .catchphrase-product-homepage {
+    font-size: 15px;
+    padding: 20px 10%;
+  }
+
+  .description-product-homepage {
+    font-size: 13px;
+    padding: 0 12%;
+  }
+
+  .infos-product-homepage {
+    font-size: 13px;
+    padding: 0 12%;
+  }
+
+  .infos-product-homepage i {
+    font-size: 9px;
+    padding: 8px;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+
+  .product-homepage .btn {
+    top: 25px;
+  }
+  
+  
+}
+
+
+
+
+
+
+  
 

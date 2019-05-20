@@ -1,9 +1,7 @@
 .btn {
-  padding: 14px 45px;
   font-weight: 900;
   font-family: $button-font;
   text-transform: uppercase;
-  font-size: 17px;
 }
 
 .btn-dark-background {
@@ -30,28 +28,42 @@
 
 
 
-.btn2 {
-  padding: 15px 25px;
-  font-weight: 900;
-  font-family: $button-font;
-  text-transform: uppercase;
-  letter-spacing: .2em;
-  font-size: 14px;
-}
-
-.btn2:hover {
-  text-decoration: none;
-}
 
 
-.btn2-dark-background {
-  color: white;
-  border-left: solid 13px $yellow;
-  /*outline: solid 2px rgba(0, 0, 0, .3);*/
-  background: $pink;
-  transition: all 0.3s ease;
+
+@media screen and (min-width: 1000px) {
+  
+  .btn {
+    padding: 14px 45px;
+    font-size: 17px;
+  }
+  
 }
-.btn2-dark-background:hover {
-  background: transparent;
-  color: $yellow; 
+
+
+
+@media screen and (min-width: 480px) and (max-width: 1000px) {
+  
+  .btn {
+    padding: 12px 35px;
+    font-size: 15px;
+  }
+  
 }
+
+
+
+@media screen and (max-width: 480px) {
+  
+  .btn {
+    padding: 12px 35px;
+    font-size: 15px;
+  }
+  
+}
+
+
+
+
+
+

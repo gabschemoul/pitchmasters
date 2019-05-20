@@ -1,73 +1,90 @@
-.navbar-pms {
+.navbar-homepage {
   position: relative;
   display: flex;
   align-items: center;
-  padding: 3vh 5vw !important;
   justify-content: space-between;
   color: $yellow;
   background: $blue;
 }
 
-.navbar-pms a {
+.navbar-homepage a {
   color: $white;
   font-family: $navbar-font;
-  font-size: 12px;
   font-weight: 900;
-  line-height: 1.6;
-  padding: 0px 5px !important;
   text-transform: uppercase;
   transition: all 0.3s ease;
 }
 
-.navbar-pms .nav-bar-right a:hover {
+.navbar-homepage .nav-bar-right a:hover {
   background: $cyan;
   color: $black;
   text-decoration: none;
 }
 
-.navbar-pms .brand {
-  height: 85px;
+
+
+
+@media screen and (min-width: 1000px) {
+  
+  .navbar-homepage {
+    padding: 3vh 5vw !important;
+  }
+
+  .navbar-homepage a {
+    font-size: 12px;
+    line-height: 1.6;
+    padding: 0px 5px !important;
+  }
+
+  .navbar-homepage .brand {
+    height: 85px;
+  }
+  
 }
 
-.navbar-pms .navbar-pms-actions {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
+
+
+@media screen and (min-width: 480px) and (max-width: 1000px) {
+  
+  .navbar-homepage {
+    padding: 3vh 5vw !important;
+  }
+
+  .navbar-homepage a {
+    font-size: 12px;
+    line-height: 1.6;
+    padding: 0px 5px !important;
+  }
+
+  .navbar-homepage .brand {
+    height: 85px;
+  }
+  
 }
 
-.navbar-pms .navbar-pms-actions:hover {  display: flex;
-  align-items: center;
-  text-decoration: none;
+
+
+@media screen and (max-width: 480px) {
+  
+  .navbar-homepage {
+    padding: 30px 0 !important;
+    flex-direction: column;
+  }
+
+  .navbar-homepage a {
+    font-size: 12px;
+    line-height: 1.6;
+    padding: 0px 5px !important;
+  }
+
+  .navbar-homepage .brand {
+    height: 70px;
+  }
+  
 }
 
-.navbar-pms .navbar-pms-actions .navbar-pms-link {
-  margin-left: 24px;
-  color: #999999;
-  text-decoration: none;
-}
-.navbar-pms .navbar-pms-actions .navbar-pms-link:hover {
-  color: #151515;
-  text-decoration: none;
-}
 
-.navbar-pms .navbar-pms-actions .avatar {
-  margin-left: 24px;
-}
 
-.navbar-pms .dropdown-toggle {
-  cursor: pointer;
-}
 
-.navbar-pms .navbar-pms-actions .navbar-pms-link .dropdown-toggle {
-  margin: 0;
-}
 
-.navbar-pms .navbar-pms-actions .navbar-pms-link .dropdown-menu {
-  margin: 0;
-}
-
-.menu-container {
-  display: flex;
-  align-items: center;
-}
 
