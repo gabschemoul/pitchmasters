@@ -14,19 +14,18 @@ body
   max-width: 100% !important;
 }
 
+svg {
+  vertical-align: bottom;
+}
+
+
+
 
 h2 {
   color: $black;
   font-weight: 900;
-  font-size: 40px;
-  text-transform: uppercase;/*
-  -webkit-transform: rotate(-2deg);
-  -moz-transform: rotate(-2deg);
-  -ms-transform: rotate(-2deg);
-  -o-transform: rotate(-2deg);
-  transform: rotate(-2deg);*/
+  text-transform: uppercase;
   text-align: center;
-  padding-bottom: 5vh;
 }
 
 p {
@@ -39,24 +38,9 @@ p {
 
 
 
-// HERO
 
-.hero {
-  position: relative;
-  /*background-image: url("homepage/hero-cover.jpg");*/
-  background-size: cover;
-  background-position: 0% 70%;
-}
 
-.overlay-hero-homepage {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0);
-  
-}
+
 
 
 // CUSTOMERS
@@ -64,33 +48,12 @@ p {
 .customers {
   width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 40px 0;
   background: $blue;
 }
 
-.customers .customers-title {
-  padding-bottom: 30px;
-}
-
-.customers .customers-title h4 {
-  font-family: $headers-font;
-  font-size: 12px;
-  color: rgba(255, 255, 255, 1);
-  text-transform: uppercase;
-  font-weight: 900;
-  letter-spacing: .2em;
-}
-
 .customers .customers-logos {
-  width: 90%;
   display: flex;
   justify-content: space-around;
-}
-
-.customers .customers-logo {
-  height: 45px;
 }
 
 .bottom-customers-homepage {
@@ -100,90 +63,19 @@ p {
 
 
 
-// PRESENTATION
-/*
-.presentation {
-  display: flex;
-  flex-direction: column;
-  padding: 10vh 0;
-}
-
-.presentation .important-word {
-  padding: 3px 8px;
-  background: rgba(255, 241, 0, .6);
-  border-radius: 5px;
-}
-
-.presentation-intro {
- padding: 0 15%;
-}
-
-.presentation-startup {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin-top: 40px;
-}
-
-.presentation-image {
-  max-width: 369.6px;
-  max-height: 373.5px;
-}
-
-.presentation-startup-text {
-  width: 40%;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  background: $yellow;
-  padding: 50px 60px;
-  padding-bottom: 0;
-  top: 30px;
-  left: -30px;
-}
-
-.presentation-startup-text h3 {
-  color: $black;
-  font-weight: 900;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-}
-
-.presentation-startup-text p {
-  text-align: left;
-}
-
-.presentation-startup-text .btn {
-  align-self: center;
-  position: relative;
-  top: 25px;
-}
-
-*/
-
-
 
 // PRESENTATION
 
 .presentation {
   display: flex;
   flex-direction: column;
-  margin: 100px 0;
 }
 
 .presentation .important-word {
-  padding: 3px 8px;
   background: rgba(255, 241, 0, .6);
-  border-radius: 5px;
-}
-
-.presentation-intro {
-  margin-bottom: 80px;
 }
 
 .presentation-intro p {
-  padding: 0 25%;
   font-weight: 500;
   line-height: 1.7em;
   opacity: .9;
@@ -193,48 +85,9 @@ p {
   color: $black;
 }
 
-.presentation-startup {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
 .presentation-image {
-  width: 60%;
   height: auto;
   margin: auto;
-}
-
-.presentation-startup-text {
-  width: 40%;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  align-self: flex-end;
-  background: $yellow;
-  padding: 50px 60px;
-  padding-bottom: 0;
-  bottom: -15vh;
-  left: -10vw;
-}
-
-.presentation-startup-text h3 {
-  color: $black;
-  font-weight: 900;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-}
-
-.presentation-startup-text p {
-  text-align: left;
-}
-
-.presentation-startup-text .btn {
-  align-self: center;
-  position: relative;
-  top: 25px;
 }
 
 
@@ -246,61 +99,27 @@ p {
 
 .features {
   width: 100%;
-  padding: 10vh 0;
 }
 
 .features .important-word {
-  padding: 3px 8px;
   background: rgba(0, 254, 181, .4);
-  border-radius: 5px;
 }
 
 .features-list {
   width: 100%;
-  padding: 0 10%;
   display: flex;
   flex-wrap: wrap;
-  align-items: baseline;
-  justify-content: space-between;
 }
 
 .feature {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 30%;
-  margin-top: 30px;
-}
-
-.feature img {
-  width: 60%;
-}
-
-.collective-intelligence-feature {
-  width: 65% !important;
-}
-
-.innovation-feature {
-  width: 43% !important;
-}
-
-.human-oriented-feature {
-  width: 70% !important;
-}
-
-.positive-energy-feature {
-  width: 42% !important;
-}
-
-.life-changing-feature {
-  width: 52% !important;
 }
 
 .feature h4 {
   text-transform: uppercase;
-  font-size: 20px;
   font-weight: 900;
-  padding: 20px 0;
   color: $black;
   text-align: center;
 }
@@ -319,29 +138,21 @@ p {
 
 .products-homepage {
   width: 100%;
-  padding-top: 10vh;
   background: $light-gray;
 }
 
 .products-homepage .important-word {
-  padding: 3px 8px;
   background: rgba(224, 39, 143, .4);
-  border-radius: 5px;
 }
 
 .list-products-homepage {
-  padding: 0 10%;
-  margin-top: 40px;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
 .product-homepage {
   background: $white;
-  width: 45%;
-  margin-bottom: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -359,10 +170,8 @@ p {
 
 .product-homepage h4 {
   text-transform: uppercase;
-  font-size: 28px;
   font-weight: 900;
   color: $black;
-  padding: 30px 0;
   background: $yellow;
   width: 100%;
   text-align: center;
@@ -383,57 +192,46 @@ p {
 }
 
 .catchphrase-product-homepage {
-  font-size: 18px;
   font-weight: 700;
   color: $black;
   width: 100%;
-  padding: 20px 10%;
   text-align: center;
   font-style: oblique;
 }
 
 .description-product-homepage {
-  font-size: 15px;
   font-weight: 500;
   color: $dark-gray;
   width: 100%;
-  padding: 0 12%;
   text-align: left;
   line-height: 1.8em;
 }
 
 .infos-product-homepage {
-  font-size: 15px;
   font-weight: 400;
   color: #5b616e;
   width: 100%;
-  padding: 0 12%;
   text-align: left;
   line-height: 2.4em;
 }
 
 .infos-product-homepage i {
   color: $pink;
-  font-size: 12px;
   background: rgba(224, 39, 143, .1);
-  padding: 8px;
-  border-radius: 5px;
-  margin-right: 10px;
 }
 
 .product-homepage .btn {
   position: relative;
-  top: 25px;
 }
 
 
 
 
 // HOW IT WORKS
-
+/*
 .how-it-works {
   width: 100%;
-  padding: 10vh 0;
+  padding: 50px 0;
   background: $dark-blue;
   color: $white;
 }
@@ -470,7 +268,7 @@ p {
 
 .origin {
   display: flex;
-  padding: 10vh 0;
+  padding: 50px 0;
 }
 
 .origin .important-word {
@@ -482,15 +280,349 @@ p {
 .origin-text {
  padding: 0 5%;
 }
+*/
 
 
 
 
-.call-to-action-homepage {
-  background: $cyan;
-  padding: 40px 15%;
+
+
+
+@media screen and (min-width: 1000px) {
+
+  h2 {
+    font-size: 40px;
+    padding-bottom: 40px;
+  }
+  
+  .important-word {
+    padding: 3px 8px;
+    border-radius: 5px;
+  }
+  
+  
+  
+  
+  // CUSTOMERS
+
+  .customers {
+    justify-content: center;
+    padding: 40px 0;
+  }
+
+  .customers .customers-logos {
+    width: 90%;
+    flex-direction: row;
+  }
+
+  .customers .customers-logo {
+    height: 45px;
+  }
+
+  .bottom-customers-homepage {
+    margin-bottom: 30px;
+  }
+  
+  
+  
+  
+  // PRESENTATION
+
+  .presentation {
+    margin: 100px 0;
+  }
+
+  .presentation-intro {
+    margin-bottom: 50px;
+  }
+
+  .presentation-intro p {
+    padding: 0 15%;
+  }
+
+  .presentation-image {
+    width: 80%;
+  }
+  
+  
+  
+  
+  
+  
+  // FEATURES
+
+  .features {
+    padding: 100px 0;
+  }
+
+  .features-list {
+    padding: 0 10%;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+
+  .feature {
+    width: 30%;
+    margin-top: 30px;
+  }
+
+  .feature img {
+    width: 60%;
+  }
+
+  .collective-intelligence-feature {
+    width: 65% !important;
+  }
+
+  .innovation-feature {
+    width: 43% !important;
+  }
+
+  .human-oriented-feature {
+    width: 70% !important;
+  }
+
+  .positive-energy-feature {
+    width: 42% !important;
+  }
+
+  .life-changing-feature {
+    width: 52% !important;
+  }
+
+  .feature h4 {
+    font-size: 20px;
+    padding: 20px 0;
+  }
+  
+  
+  
+  
+  
+  // PRODUCTS
+
+  .products-homepage {
+    padding-top: 130px;
+  }
+
+  .list-products-homepage {
+    margin-top: 40px;
+  }
+
+  .product-homepage {
+    width: 500px;
+    margin: 0 20px 100px 20px;
+  }
+
+  .product-homepage h4 {
+    font-size: 28px;
+    padding: 30px 0;
+  }
+
+  .catchphrase-product-homepage {
+    font-size: 18px;
+    padding: 20px 10%;
+  }
+
+  .description-product-homepage {
+    font-size: 15px;
+    padding: 0 12%;
+  }
+
+  .infos-product-homepage {
+    font-size: 15px;
+    padding: 0 12%;
+  }
+
+  .infos-product-homepage i {
+    font-size: 12px;
+    padding: 8px;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+
+  .product-homepage .btn {
+    top: 25px;
+  }
+
 }
 
+
+
+
+
+
+@media screen and (min-width: 480px) and (max-width: 1000px) {
+  .bottom-customers-homepage {
+  background: $pink;
+}
+  
+  .customers {
+  background: $pink;
+}
+  
+  
+  h2 {
+    font-size: 30px;
+    padding-bottom: 40px;
+  }
+  
+  p {
+    font-size: 14px;
+  }
+  
+ .important-word {
+    padding: 3px 8px;
+    border-radius: 5px;
+  }
+  
+  
+  
+  
+  // CUSTOMERS
+
+  .customers {
+    justify-content: center;
+    padding: 40px 0;
+  }
+
+  .customers .customers-logos {
+    width: 90%;
+    flex-direction: row;
+  }
+
+  .customers .customers-logo {
+    height: 30px;
+  }
+
+  .bottom-customers-homepage {
+    margin-bottom: 30px;
+  }
+  
+  
+  
+  
+  // PRESENTATION
+
+  .presentation {
+    margin: 50px 0;
+  }
+
+  .presentation-intro {
+    margin-bottom: 50px;
+  }
+
+  .presentation-intro p {
+    padding: 0 10%;
+  }
+
+  .presentation-image {
+    width: 80%;
+  }
+  
+  
+  
+  
+  
+  
+  // FEATURES
+
+  .features {
+    padding: 100px 0;
+  }
+
+  .features-list {
+    padding: 0 10%;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+
+  .feature {
+    width: 30%;
+    margin-top: 30px;
+  }
+
+  .feature img {
+    width: 60%;
+  }
+
+  .collective-intelligence-feature {
+    width: 65% !important;
+  }
+
+  .innovation-feature {
+    width: 43% !important;
+  }
+
+  .human-oriented-feature {
+    width: 70% !important;
+  }
+
+  .positive-energy-feature {
+    width: 42% !important;
+  }
+
+  .life-changing-feature {
+    width: 52% !important;
+  }
+
+  .feature h4 {
+    font-size: 20px;
+    padding: 20px 0;
+  }
+  
+  
+  
+  
+  
+  // PRODUCTS
+
+  .products-homepage {
+    padding-top: 130px;
+  }
+
+  .list-products-homepage {
+    margin-top: 40px;
+  }
+
+  .product-homepage {
+    width: 500px;
+    margin: 0 20px 100px 20px;
+  }
+
+  .product-homepage h4 {
+    font-size: 28px;
+    padding: 30px 0;
+  }
+
+  .catchphrase-product-homepage {
+    font-size: 18px;
+    padding: 20px 10%;
+  }
+
+  .description-product-homepage {
+    font-size: 15px;
+    padding: 0 12%;
+  }
+
+  .infos-product-homepage {
+    font-size: 15px;
+    padding: 0 12%;
+  }
+
+  .infos-product-homepage i {
+    font-size: 12px;
+    padding: 8px;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+
+  .product-homepage .btn {
+    top: 25px;
+  }
+  
+  
+}
 
 
 
