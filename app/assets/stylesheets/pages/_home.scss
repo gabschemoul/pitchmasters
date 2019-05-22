@@ -224,6 +224,26 @@ p {
   position: relative;
 }
 
+.product-homepage:nth-child(1) .btn:hover {
+  background: $yellow;
+  color: $black;
+}
+
+.product-homepage:nth-child(2) .btn:hover {
+  background: $pink;
+  color: $white;
+}
+
+.product-homepage:nth-child(3) .btn:hover {
+  background: $cyan;
+  color: $black;
+}
+
+.product-homepage:nth-child(4) .btn:hover {
+  background: $blue;
+  color: $white;
+}
+
 
 
 
@@ -424,28 +444,28 @@ p {
   }
 
   .product-homepage {
-    width: 500px;
-    margin: 0 20px 100px 20px;
+    width: 21%;
+    margin: 0 1% 100px 1%;
   }
 
   .product-homepage h4 {
-    font-size: 28px;
+    font-size: 20px;
     padding: 30px 0;
   }
 
   .catchphrase-product-homepage {
-    font-size: 18px;
-    padding: 20px 10%;
+    font-size: 16px;
+    padding: 20px 7%;
   }
 
   .description-product-homepage {
-    font-size: 15px;
-    padding: 0 12%;
+    font-size: 14px;
+    padding: 0 10%;
   }
 
   .infos-product-homepage {
-    font-size: 15px;
-    padding: 0 12%;
+    font-size: 13px;
+    padding: 0 10%;
   }
 
   .infos-product-homepage i {
@@ -457,6 +477,8 @@ p {
 
   .product-homepage .btn {
     top: 25px;
+    font-size: 12px;
+    padding: 12px 15px;
   }
 
 }
@@ -642,6 +664,17 @@ p {
   
 }
 
+
+
+
+@media screen and (min-width: 800px) and (max-width: 1000px) {
+  
+  .product-homepage {
+    width: 45%;
+    margin: 0 1% 100px 1%;
+  }
+  
+}
 
 
 
@@ -840,6 +873,8 @@ p {
     display: none;
   }
 }
+
+
 
 
 
