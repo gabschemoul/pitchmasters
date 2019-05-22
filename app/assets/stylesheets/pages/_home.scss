@@ -72,7 +72,7 @@ p {
 }
 
 .presentation .important-word {
-  background: rgba(224, 39, 143, .4);
+  background: rgba(43, 252, 183, .4);
   
 }
 
@@ -83,7 +83,7 @@ p {
 }
 
 .presentation-intro b {
-  background-color: rgba(255, 241, 0, .4);
+  font-weight: 700;
 }
 
 .presentation-image {
@@ -138,11 +138,11 @@ p {
 
 .products-homepage {
   width: 100%;
-  background: $light-gray;
+  background: $light-blue;
 }
 
 .products-homepage .important-word {
-  background: rgba(0, 254, 181, .4);
+  background: rgba(0, 85, 255, .4);
 }
 
 .list-products-homepage {
@@ -317,10 +317,15 @@ p {
   .customers .customers-logos {
     width: 90%;
     flex-direction: row;
+    align-items: center;
   }
 
   .customers .customers-logo {
     height: 45px;
+  }
+  
+  .customers .chanel {
+    height: 20px;
   }
 
   .bottom-customers-homepage {
@@ -492,10 +497,15 @@ p {
   .customers .customers-logos {
     width: 90%;
     flex-direction: row;
+    align-items: center;
   }
 
   .customers .customers-logo {
     height: 35px;
+  }
+  
+  .customers .chanel {
+    height: 13px;
   }
 
   .bottom-customers-homepage {
@@ -658,10 +668,35 @@ p {
   
   
   // CUSTOMERS
-
+  
   .customers {
-    display: none;
+    justify-content: center;
+    padding: 40px 0;
   }
+
+  .customers .customers-logos {
+    width: 90%;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .customers .customers-logo {
+    width: 20%;
+    margin: 0 5% 30px 5%;
+  }
+  
+  .customers .bva {
+    padding: 3%;
+  }
+  
+  .customers .business-france, .customers .ratp {
+    padding: 1%;
+  }
+  
+  
+  
+
 
   .bottom-customers-homepage {
     margin-bottom: 30px;
@@ -798,6 +833,13 @@ p {
 }
 
 
+
+
+@media screen and (max-width: 800px) {
+  .customers .cci {
+    display: none;
+  }
+}
 
 
 
