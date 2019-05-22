@@ -26,8 +26,23 @@
     font-size: 16px;
     padding-top: 70px;
   }
+  
+  .footer .upper-planet-footer svg {
+    position: relative;
+    left: 10%;
+    width: 600px;
+    height: 600px;
+    x-index: -1;
+   }
+  
+  .footer .upper-planet-footer svg circle {
+    fill: $yellow;
+    r: 300px;
+   }
 
   .footer .footer-card {
+    position: relative;
+    margin-top: -200px;
     align-items: center;
     flex-direction: column;
     justify-content: flex-end;
@@ -58,6 +73,8 @@
   }
 
   .footer .footer-card {
+    position: relative;
+    margin-top: -100px;
     align-items: center;
     flex-direction: column;
     justify-content: flex-end;
@@ -65,6 +82,19 @@
     padding: 20px 50px;
     background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100%' height='400'><circle cx='55%' cy='300%' r='1200' fill='rgb(224, 39, 143)' /></svg>")  no-repeat;
   }
+  
+  .footer .upper-planet-footer svg {
+    position: relative;
+    left: 10%;
+    width: 300px;
+    height: 300px;
+    x-index: -1;
+   }
+  
+  .footer .upper-planet-footer svg circle {
+    fill: $yellow;
+    r: 150px;
+   }
 
   .footer-copyright {
     margin-top: 70px;
@@ -79,8 +109,23 @@
   .footer {
     font-size: 16px;
   }
+  
+  .footer .upper-planet-footer svg {
+    position: relative;
+    left: 10%;
+    width: 150px;
+    height: 150px;
+    x-index: -1;
+   }
+  
+  .footer .upper-planet-footer svg circle {
+    fill: $yellow;
+    r: 75px;
+   }
 
   .footer .footer-card {
+    position: relative;
+    margin-top: -150px;
     align-items: center;
     flex-direction: column;
     justify-content: flex-end;
