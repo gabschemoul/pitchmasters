@@ -7,6 +7,10 @@
   color: $white;
 }
 
+.astronaute-footer {
+  position: absolute;
+}
+
 .footer-copyright {
   font-weight: 700;
 }
@@ -49,6 +53,12 @@
     height: 300px;
     padding: 40px 50px;
     background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100%' height='400'><circle cx='55%' cy='300%' r='1200' fill='rgb(224, 39, 143)' /></svg>")  no-repeat;
+  }
+  
+  .astronaute-footer {
+    width: 100px;
+    left: 60%;
+    top: -20%;
   }
   
   .footer .btn {
@@ -95,6 +105,12 @@
     fill: $yellow;
     r: 150px;
    }
+  
+  .astronaute-footer {
+    width: 80px;
+    left: 60%;
+    top: -30%;
+  }
 
   .footer-copyright {
     margin-top: 70px;
@@ -135,6 +151,12 @@
  */   background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='70%' height='400'><circle cx='55%' cy='270px' r='200' fill='rgb(224, 39, 143)' /></svg>")  no-repeat;
   }
   
+  .astronaute-footer {
+    width: 80px;
+    left: 60%;
+    top: 0;
+  }
+  
   .footer .btn {
     font-size: 12px;
     padding: 12px 25px;
@@ -142,6 +164,7 @@
 
   .footer-copyright {
     margin-top: 60px;
+    font-size: 14px;
   }
   
 }

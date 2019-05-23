@@ -306,6 +306,17 @@ p {
 
 
 
+  // PLANETS
+  
+  .planet-homepage {
+    position: relative;
+    z-index: 100;
+  }
+
+
+
+
+
 
 
 @media screen and (min-width: 1000px) {
@@ -436,7 +447,7 @@ p {
   // PRODUCTS
 
   .products-homepage {
-    padding-top: 130px;
+    padding-top: 170px;
   }
 
   .list-products-homepage {
@@ -480,10 +491,20 @@ p {
     font-size: 12px;
     padding: 12px 15px;
   }
+  
+  
+  
+  
+  // PLANETS
+  
+  .planet-homepage {
+    width: 300px;
+    margin-bottom: -50px;
+    left: 50%;
+    transform: translatex(-50%);
+  }
 
 }
-
-
 
 
 
@@ -618,7 +639,7 @@ p {
   // PRODUCTS
 
   .products-homepage {
-    padding-top: 90px;
+    padding-top: 130px;
   }
 
   .list-products-homepage {
@@ -659,6 +680,19 @@ p {
 
   .product-homepage .btn {
     top: 25px;
+  }
+  
+  
+  
+  
+  
+  // PLANETS
+  
+  .planet-homepage {
+    width: 300px;
+    margin-bottom: -50px;
+    left: 50%;
+    transform: translatex(-50%);
   }
   
   
@@ -819,7 +853,7 @@ p {
   // PRODUCTS
 
   .products-homepage {
-    padding-top: 90px;
+    padding-top: 110px;
   }
 
   .list-products-homepage {
@@ -860,6 +894,19 @@ p {
 
   .product-homepage .btn {
     top: 25px;
+  }
+  
+  
+  
+  
+  
+  // PLANETS
+  
+  .planet-homepage {
+    width: 170px;
+    margin-bottom: -30px;
+    left: 50%;
+    transform: translatex(-50%);
   }
   
   
