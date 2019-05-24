@@ -142,7 +142,8 @@ p {
 }
 
 .products-homepage .important-word {
-  background: rgba(0, 85, 255, .4);
+  background: rgba(0, 85, 255, 1);
+  color: $white;
 }
 
 .list-products-homepage {
@@ -447,7 +448,11 @@ p {
   // PRODUCTS
 
   .products-homepage {
-    padding-top: 170px;
+    padding-top: 130px;
+  }
+  
+  .products-homepage h2 {
+    margin-bottom: 70px;
   }
 
   .list-products-homepage {
