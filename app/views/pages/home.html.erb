@@ -20,9 +20,14 @@
 </div>
   
 
+
+
+<!--    CUSTOMERS    -->
+
+
 <div class="container">
   <div class="row">
-    <div class="customers">
+    <div class="customers-homepage">
       <div class="customers-logos">
         <%= image_tag "logos/bva-white.png", alt: "Logo client Groupe BVA", class: "customers-logo bva" %>
         <%= image_tag "logos/chanel-white.png", alt: "Logo customer Chanel", class: "customers-logo chanel" %>
@@ -34,12 +39,10 @@
       </div>
     </div>
     <div class="bottom-customers-homepage">
-      <svg viewBox="0 0 1440 48"
-          version="1.1" xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink">
-        <title>Bottom of hero</title>
-        <desc>By Gabriel Schemoul</desc>
-            <path fill="#fff"  d="M0 0   c 194.22 23.31 345.236 37.383 453.045 42.218   C 539.007 46.073 627.992 48 720 48   c 265.097 0 505.097-16 720-48   v 50   H 0   V 0   z"/>
+      <!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1366 191.5">-->
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1366 101.5">
+        <path d="M1366-.5c-43,26-305.79,90.5-683,90.5S38,24.49,0-.5Z"/>
+        <!--<circle cx="1085.5" cy="100" r="84.5" class="moon-hero-homepage"/>-->
       </svg>
     </div>
   </div>
@@ -47,22 +50,33 @@
   
 
   
+  
+  
+  
+  <!--    PRESENTATION    -->
+  
 
   <div class="row">
     <div class="presentation">
-      <div class="presentation-intro">
         <h2>De quelle <span class="important-word">planète</span> vient-on ?</h2>
-        <p>
-          Nés sur la <b>planète STARTUP101</b>, nous accompagnons <b>depuis 5 ans</b> les explorateurs du cosmos - entrepreneurs, collaborateurs et dirigeants - dans leurs aventures de <b>prise de parole sur scène, dans les media et sur salons internationaux</b>.
-          <br><br>
-          Afin de les accompagner au mieux lors de ce voyage intergalactique, nous avons développé des <b>workshops thématiques</b> pour créer le super pitch efficace et impactant qui leur permettra de <b>réussir dans toutes les situations</b>.
-        </p>
-      </div>
-      <%= image_tag "homepage/wework-pitchmystartup.jpg", alt: "Pitch My Startup Event WeWork Startup", class: "presentation-image" %>
+        <div class="content-presentation-homepage">
+          <p>
+            Nés sur la <b>planète STARTUP-101</b>, nous accompagnons <b>depuis 5 ans</b> les explorateurs du cosmos - entrepreneurs, collaborateurs et dirigeants - dans leurs aventures de <b>prise de parole sur scène, dans les media et sur salons internationaux</b>.
+            <br><br>
+            Afin de les accompagner au mieux lors de ce voyage intergalactique, nous avons développé des <b>workshops thématiques</b> pour créer le super pitch efficace et impactant qui leur permettra de <b>réussir dans toutes les situations</b>.
+            <br><br>
+            <span>Prêt à embarquer ?</span>
+          </p>
+        </div>
     </div>
   </div>
   
   
+  
+  
+  
+  
+  <!--    FEATURES    -->
   
   
   <div class="row">
@@ -128,24 +142,35 @@
       </div>
     </div>
   </div>
+ 
   
-  <!--
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 205.83 116.16" class="planet-homepage">
-    <defs>
-      <style>.cls-1{fill:#fff;}.cls-2,.cls-3{fill:none;stroke:#1d1d1b;stroke-miterlimit:10;stroke-width:1.67px;}.cls-3{stroke-dasharray:3 3;}.cls-4{fill:#ffed00;}
-      </style>
-    </defs>
-    <title>Planet Homepage</title>
-    <g id="Calque_2" data-name="Calque 2">
-      <g id="Calque_1-2" data-name="Calque 1">
-        <path class="cls-1" d="M165.07,58.08A57.25,57.25,0,1,1,107.82.83a57.25,57.25,0,0,1,57.25,57.25"/>
-        <path class="cls-2" d="M165.07,58.08A57.25,57.25,0,1,1,107.82.83,57.25,57.25,0,0,1,165.07,58.08Z"/>
-        <path class="cls-3" d="M165.05,58.78c6.19,5.41,9.26,10.87,8.13,15.7C170.1,87.67,136.93,91.2,99.1,82.35s-66-26.7-62.92-39.88c1.41-6,9.12-10,20.68-11.77l5.49-7.37-2.45.12C27.71,22.35,4.27,29,1.18,42.25-3.4,61.84,38.44,88.37,94.63,101.5s105.44,7.9,110-11.69c2.9-12.39-12.79-27.56-38.93-40.36l-1.51.19Z"/>
-        <path class="cls-4" d="M181.76,106.88a5.24,5.24,0,1,1-5.24-5.24A5.25,5.25,0,0,1,181.76,106.88Z"/>
-      </g>
-    </g>
-  </svg>
+  
+  
+  
+  
+    <!--    PITCHER    -->
+  
+ <!-- 
+  <div class="row">
+    <div class="pitcher-homepage">
+      <%= image_tag("homepage/mickaela-pitchmystartup.jpg", :class => "image-pitcher-homepage") %>
+    </div>
+  </div>
   -->
+  <div class="row">
+    <div class="top-product-homepage">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1366 90.5">
+        <path d="M1366,96C1323,70,1060.21,5.5,683,5.5S38,71,0,96Z" transform="translate(0 -5.5)"/>
+      </svg>
+    </div>
+  </div>
+  
+  
+  
+  
+  
+  
+  <!--    PRODUCT    -->
   
   
   <div class="row">
@@ -236,13 +261,13 @@
             <p class="description-product-homepage">
               <b>Pour qui</b><br>Collaborateurs d'entreprise
               <br><br><br>
-              <b>Dans quel cadre</b><br>Situation de networking,<br>Evénement en interne,<br>Salon
+              <b>Dans quel cadre</b><br>Situation de networking,<br>Evénement en interne,<br>Salon professionnel
               <br><br>
               <b>Langues</b><br>Français, anglais
             </p>
             <p class="infos-product-homepage">
-              <br><i class="fas fa-user-alt"></i> 5-32 participants<br>
-              <i class="fas fa-clock"></i> 1 ou 2 demi-journée(s)
+              <i class="fas fa-user-alt"></i> 5-32 participants<br>
+              <i class="fas fa-clock"></i> 1 ou 2 demi-journée(s)<br>&emsp;
             </p>
             
           </div>
@@ -253,175 +278,8 @@
   </div>
   
   
-  
-  
-  
-  <!--
-  <div class="row">
-    <div class="call-to-action-homepage">
-      <h2>
-        Prêts à devenir les maitre du pitch ?
-      </h2>
-      <p>
-        Faîtes appel à nos experts et développez vos skills en prise de parole
-      </p>
-      <= link_to "Je veux ça", "contact", class: "btn btn-light-background" %>
-    </div>
-  </div>
-  -->
-  
-  
-  <!--
-  <div class="row">
-    <div class="how-it-works">
-      <h2>
-        <span class="important-word">comment</span> ça fonctionne
-      </h2>
-      <div class="steps-list">
-        <div class="step">
-          <h4>
-            Le Brief
-          </h4>
-        </div>
-        <div class="step">
-          <h4>
-            Le Matching
-          </h4>
-        </div>
-        <div class="step">
-          <h4>
-            La Préparation
-          </h4>
-        </div>
-        <div class="step">
-          <h4>
-            Le Workshop
-          </h4>
-        </div>
-        <div class="step">
-          <h4>
-            L'After
-          </h4>
-        </div>
-      </div>
-    </div>
-  </div>
-  -->
-  
-  
-  <!--
-  <div class="row">
-    <div class="origin">
-      <div class="origin-text">
-        <h2>Ce qui nous rend <span class="important-word">différent</span> des autres</h2>
-        <p>On débarque tout droit de la scène startup !<br><br>Il y a 5 ans, on a fondé Pitch My Startup, l’un des grands événements de pitch de l’écosystème startup parisien. Du coup, la prise de parole n’a plus beaucoup de secrets pour nous.</p>
-      </div>
-    </div>
-  </div>
-  -->
-        
-
-
-<!--
-  <div class="row">
-    <div class="fonctionnement">
-      <h2>Notre mode de fonctionnement</h2>
-      <div class="etapes">
-        <div class="etape">
-          <div class="icone">
-            <= image_tag "avatar.jpg", class:"avatar-bordered" %>
-          </div>
-          <div class="text-ingredient">
-            <h2>Etape 1</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          </div>
-        </div>
-        <div class="etape">
-          <div class="icone">
-            <= image_tag "avatar.jpg", class:"avatar-bordered" %>
-          </div>
-          <div class="text-ingredient">
-            <h2>Etape 2</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          </div>
-        </div>
-        <div class="etape">
-          <div class="icone">
-            <= image_tag "avatar.jpg", class:"avatar-bordered" %>
-          </div>
-          <div class="text-ingredient">
-            <h2>Etape 3</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
 
 
-  <h2>Nos produits</h2>
-  <div class="row">
-    <div class="col-xs-12 col-sm-4">
-      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(<= image_path ("avatar")%>);">
-        <div class="card-description">
-          <h2>Evénementiel Innovation</h2>
-          <p>the best</p>
-        </div>
-        <a class="card-link" href="#" ></a>
-      </div>
-    </div>
-    <div class="col-xs-12 col-sm-4">
-      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(<= image_path ("avatar")%>);">
-        <div class="card-description">
-          <h2>Collaborateur to Ambassadeur</h2>
-          <p>the best</p>
-        </div>
-        <a class="card-link" href="#" ></a>
-      </div>
-    </div>
-    <div class="col-xs-12 col-sm-4">
-      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(<= image_path ("avatar")%>);">
-        <div class="card-description">
-          <h2>Coaching projet</h2>
-          <p>the best</p>
-        </div>
-        <a class="card-link" href="#" ></a>
-      </div>
-    </div>
-  </div>
 
-
-
-  
-  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-<!--         <= image_tag "avatar.jpg", class:"d-block w-100" %> ->
-        <img src="https://picsum.photos/1110/200?random=1"/>
-      </div>
-      <div class="carousel-item">
-<!--         <= image_tag "avatar.jpg", class:"d-block w-100" %> ->
-        <img src="https://picsum.photos/1110/200?random=2"/>
-      </div>
-      <div class="carousel-item">
-<!--         <= image_tag "avatar.jpg", class:"d-block w-100" %> ->
-        <img src="https://picsum.photos/1110/200?random=3"/>
-      </div>
-    </div>
-    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Précédent</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Suivant</span>
-    </a>
-  </div>
-
-
-
-  <%= render "shared/contact" %>
-
--->
-                                          </div>
+</div>
