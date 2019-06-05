@@ -33,7 +33,10 @@
     <%= yield %>
     <%= javascript_include_tag "application" %> <!-- from app/assets/javascripts/application.js -->
     <%= javascript_pack_tag 'application' %>  <!-- from app/javascript/packs/application.js -->
-    <%= render "shared/footer" %>
+    <% unless current_page?('/contact') %>
+      <%= render "shared/footer" %>
+    <% end %>
+
     <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="8b8c4b1c-1952-4a2d-b4bc-eee077681eda";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
   </body>
 </html>
