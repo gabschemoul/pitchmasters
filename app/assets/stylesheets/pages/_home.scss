@@ -141,16 +141,21 @@ p {
 
 .top-product-homepage svg path {
   fill: #F5F8FC;
+  fill: $dark-blue;
 }
 
 .products-homepage {
   width: 100%;
-  background: $light-blue;
+  background: $dark-blue;
+
+  h2 {
+    color: $white;
+  }
 }
 
 .products-homepage .important-word {
-  background: rgba(0, 85, 255, 1);
-  color: $white;
+  background: $cyan;
+  color: $black;
 }
 
 .list-products-homepage {
@@ -330,6 +335,10 @@ p {
   
   .customers-homepage .chanel {
     height: 20px;
+  }
+
+  .customers-homepage .allianz {
+    height: 30px;
   }
 
   .bottom-customers-homepage {
