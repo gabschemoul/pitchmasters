@@ -1,8 +1,22 @@
 .btn {
-  font-weight: 900;
+  font-weight: 800;
   font-family: $button-font;
   text-transform: uppercase;
-  border-radius: 5px;
+  border-radius: 10px;
+}
+
+.btn-pink {
+  color: $white;
+  background: $pink;
+  transition: all 0.3s ease;
+  box-shadow: 0px 0px 30px rgba(224, 40, 142, .4);
+}
+
+.btn-pink:hover {
+  color: $night-blue;
+  background: $yellow;
+  box-shadow: 0px 0px 30px rgba(255, 241, 0, .5);
+  transition: all 0.3s ease;
 }
 
 .btn-dark-background {
@@ -35,8 +49,8 @@
 @media screen and (min-width: 1000px) {
   
   .btn {
-    padding: 14px 45px;
-    font-size: 17px;
+    padding: 14px 30px;
+    font-size: 15px;
   }
   
 }

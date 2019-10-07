@@ -24,6 +24,7 @@ h2 {
   font-weight: 900;
   text-transform: uppercase;
   text-align: center;
+  padding: 0 20px;
 }
 
 p {
@@ -46,7 +47,9 @@ p {
 .customers-homepage {
   width: 100%;
   display: flex;
-  background: $blue;
+  background: $dark-blue;
+
+  
 }
 
 .customers-homepage .customers-logos {
@@ -60,7 +63,7 @@ p {
 }
 
 .bottom-customers-homepage svg path {
-  fill: $blue;
+  fill: $dark-blue;
 }
 
 .bottom-customers-homepage svg circle {
@@ -78,13 +81,29 @@ p {
 }
 
 .presentation .important-word {
-  background: rgba(43, 252, 183, .4);
+  background: $cyan;
   
 }
 
 .content-presentation-homepage p span {
   text-transform: uppercase;
   font-weight: 700;
+}
+
+
+
+
+
+
+// PICTURE
+
+.picture-homepage {
+
+  img.picture {
+    border-radius: 40px;
+    box-shadow: 0px 0px 100px rgba(42, 12, 83, .3);
+  }
+
 }
 
 
@@ -101,7 +120,7 @@ p {
 }
 
 .features .important-word {
-  background: rgba(255, 241, 0, .6);
+  background: $yellow;
 }
 
 .features-list {
@@ -134,28 +153,18 @@ p {
 
 // PRODUCTS
 
-.top-product-homepage {
-  background: transparent;
-  width: 100%;
-}
 
-.top-product-homepage svg path {
-  fill: #F5F8FC;
-  fill: $dark-blue;
-}
 
 .products-homepage {
   width: 100%;
-  background: $dark-blue;
+  background: $white;
 
-  h2 {
-    color: $white;
-  }
+  
 }
 
 .products-homepage .important-word {
-  background: $cyan;
-  color: $black;
+  background: $blue;
+  color: white;
 }
 
 .list-products-homepage {
@@ -165,7 +174,7 @@ p {
 }
 
 .product-homepage {
-  background: $white;
+  background: $light-blue;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -240,21 +249,31 @@ p {
 .product-homepage:nth-child(1) .btn:hover {
   background: $yellow;
   color: $black;
+  box-shadow: 0px 0px 15px rgba(255, 241, 0, .5);
 }
 
 .product-homepage:nth-child(2) .btn:hover {
   background: $pink;
   color: $white;
+  box-shadow: 0px 0px 15px rgba(224, 40, 142, .5);
 }
 
 .product-homepage:nth-child(3) .btn:hover {
   background: $cyan;
   color: $black;
+  box-shadow: 0px 0px 15px rgba(6, 254, 181, .5);
 }
 
 .product-homepage:nth-child(4) .btn:hover {
   background: $blue;
   color: $white;
+  box-shadow: 0px 0px 15px rgba(21, 0, 255, .5);
+}
+
+.product-homepage .btn {
+  color: $white;
+  background: $night-blue;
+  transition: all 0.3s ease;
 }
 
 
@@ -289,38 +308,13 @@ p {
   
   
   
-  /*
-  @keyframes moon-animation {
-    0% {
-      cx: 1085.5;
-      cy: 100;
-    }
-    
-    50% {
-      cx: 1090;
-      cy: 105;
-    }
-    
-    100% {
-      cx: 1085.5;
-      cy: 100;
-    }
-  }
-  
-  .moon-hero-homepage {
-    position: relative;
-    animation: moon-animation 2s ease-in-out infinite;
-  }*/
-  
-  
-  
-  
   
   // CUSTOMERS
 
   .customers-homepage {
     justify-content: center;
     padding: 40px 0;
+    padding-bottom: 60px;
   }
 
   .customers-homepage .customers-logos {
@@ -342,7 +336,14 @@ p {
   }
 
   .bottom-customers-homepage {
-    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    .planet-homepage {
+      width: 150px;
+      margin: -100px 150px 0 0;
+    }
   }
   
   
@@ -363,6 +364,45 @@ p {
   .content-presentation-homepage p {
     width: 100%;
   }
+
+
+
+
+
+
+    // PICTURE
+
+    .picture-homepage {
+      width: 100%;
+      margin-top: 100px;
+      margin-bottom: 80px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      img.picture {
+        width: 65%;
+        z-index: 1000;
+      }
+
+      img.line {
+        width: 100%;
+        margin-top: -350px;
+      }
+    }
+
+
+  // PLANET SYSTEM
+
+    .planet-system-homepage {
+      width: 100vw;
+      margin-top: -80vw;
+      z-index: -1;
+
+      .planet-system {
+        width: 112%;
+      }
+    }
   
   
   
@@ -372,7 +412,8 @@ p {
   // FEATURES
 
   .features {
-    padding: 100px 0;
+    padding-bottom: 100px;
+    margin-top: -150px;
   }
 
   .features-list {
@@ -415,25 +456,7 @@ p {
     padding: 20px 0;
   }
   
-  
-  
-  
-  
-  // PITCHER
-  
-  .pitcher-homepage {
-    width: 60%;
-    margin: auto;
-    z-index: 100;
-    background-color: #c0d9fb;
-    margin-bottom: -22%;
-  }
-  
-  .image-pitcher-homepage {
-    width: 100%;
-    border-radius: 20px;
-  }
-  
+
   
   
   
@@ -441,7 +464,7 @@ p {
   // PRODUCTS
 
   .products-homepage {
-    padding-top: 100px;
+    margin-top: 100px;
   }
   
   .products-homepage h2 {
@@ -497,7 +520,6 @@ p {
 
 
 @media screen and (min-width: 480px) and (max-width: 1000px) {
-  
   
   h2 {
     font-size: 30px;
@@ -560,6 +582,23 @@ p {
     width: 100%;
     margin-top: 20px;
   }
+
+
+
+
+
+
+  // PLANET SYSTEM
+
+  .planet-system-homepage {
+    width: 100vw;
+    margin-top: -80vw;
+    z-index: -1;
+
+    .planet-system {
+      width: 112%;
+    }
+  }
   
   
   
@@ -570,6 +609,7 @@ p {
 
   .features {
     padding: 50px 0 100px 0;
+    margin-top: -150px;
   }
 
   .features-list {
@@ -786,12 +826,27 @@ p {
     margin-bottom: 50px;
   }
 
+  .content-presentation-homepage {
+    padding: 0 10%;
+  }
+
   .presentation-intro p {
     padding: 0 10%;
   }
 
   .presentation-image {
     width: 90%;
+  }
+
+
+
+
+
+
+  // PLANET SYSTEM
+
+  .planet-system-homepage {
+    display: none;
   }
   
   
@@ -940,9 +995,13 @@ p {
 
 
 @media screen and (max-width: 800px) {
-  .customers .cci {
-    display: none;
+  .customers-homepage {
+     .cci {
+      display: none;
+     }
   }
+
+
 }
 
 

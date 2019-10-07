@@ -10,15 +10,15 @@
 
   <div class="banner">
     <div class="container">
-      <h1>Devenez les maitres du pitch !</h1>
+      <h1>Devenez les <span class="important-word">maitres</span> du pitch !</h1>
       <h3>
         Vivez une expérience transformante et développez votre leadership<br>grâce à nos workshops en prise de parole inspirés de la scène startup
       </h3>
-      <%= link_to "Découvrez nos workshops", "#products-homepage", class: "btn btn-dark-background" %>
+      <%= link_to "Découvrez nos workshops", "#products-homepage", class: "btn btn-pink" %>
     </div>
   </div>
 </div>
-  
+
 
 
 
@@ -64,13 +64,24 @@
             Nés sur la <b>planète STARTUP-101</b>, nous accompagnons <b>depuis 5 ans</b> les explorateurs du cosmos - entrepreneurs, collaborateurs et dirigeants - dans leurs aventures de <b>prise de parole sur scène, dans les media et sur salons internationaux</b>.
             <br><br>
             Afin de les accompagner au mieux lors de ce voyage intergalactique, nous avons développé des <b>workshops thématiques</b> pour créer le super pitch efficace et impactant qui leur permettra de <b>réussir dans toutes les situations</b>.
-            <br><br>
-            <span>Prêt à embarquer ?</span>
           </p>
         </div>
     </section>
   </div>
   
+
+
+
+
+
+    <!--    PICTURE    -->
+  
+
+  <div class="row">
+    <section class="planet-system-homepage">
+      <%= image_tag "homepage/svg/planet-system.png", class: "planet-system" %>
+    </section>
+  </div>
   
   
   
@@ -157,13 +168,7 @@
     </div>
   </div>
   -->
-  <div class="row">
-    <div class="top-product-homepage">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1366 90.5">
-        <path d="M1366,96C1323,70,1060.21,5.5,683,5.5S38,71,0,96Z" transform="translate(0 -5.5)"/>
-      </svg>
-    </div>
-  </div>
+  
   
   
   
@@ -210,7 +215,7 @@
           </h4>
           <div class="content-product-homepage">
             <p class="catchphrase-product-homepage">
-              Pitcher votre startup lors de Demo days
+              Maîtrisez une prise de parole courte et impactante
             </p>
             <p class="description-product-homepage">
               <b>Pour qui</b><br>Startups,<br>Projets intrapreneuriaux
@@ -279,6 +284,13 @@
 
 
 
+<div class="row">
+    <div class="top-product-homepage">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1366 90.5">
+        <path d="M1366,96C1323,70,1060.21,5.5,683,5.5S38,71,0,96Z" transform="translate(0 -5.5)"/>
+      </svg>
+    </div>
+  </div>
 
 
   <!--    TESTIMONIALS    -->
@@ -287,7 +299,8 @@
   <div class="row">
     <div class="testimonials-homepage" id="testimonials-homepage">
 
-      <div class="testimony-homepage" id="testimony-homepage">
+
+      <div class="testimony-homepage"><!--
         <div class="three-dots-homepage">
           <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 39.81 9.37">
             <style type="text/css">
@@ -304,26 +317,59 @@
             <g>
               <circle class="st2" cx="34.98" cy="4.62" r="4.5"/>
             </g>
-          </svg>`
+          </svg>
         </div>
+-->
+        <div class="carousel slide carousel-fade" id="carousel-testimony-homepage" data-ride="carousel" data-interval="false">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <p class="text">
+                “ Pitch Masters a accompagné la RATP dans la préparation de Viva Technology 2019 en coachant et formant près de <b>50 collaborateurs-ambassadeurs</b> sur le stand RATP.
+                <br><br>
+                Cette formation, montée en un temps record, a été un vrai plus dans l’animation du stand puisque les collaborateurs ont reçu <b>les clés de la prise de parole en public</b> et ont délivré avec <b>plus d’impact</b> les messages que le Groupe RATP voulait faire passer.
+              </p>
 
-        <p class="text">
-          “ Pitch Masters a accompagné la RATP dans la préparation de Viva Technology 2019 en coachant et formant près de 50 collaborateurs-ambassadeurs sur le stand RATP.
-          <br><br>
-          Cette formation, montée en un temps record, a été un vrai plus dans l’animation du stand puisque les collaborateurs ont reçu les clés de la prise de parole en public et ont délivré avec plus d’impact les messages que le Groupe RATP voulait faire passer.
-          <br><br>
-          Les coachs de Pitch Masters ont ainsi contribué à créer une belle dynamique et un état d’esprit bienveillant dans une ambiance positive. “
-        </p>
+              <div class="footer-testimony">
+                <p class="author">
+                  <span class="name">Thomas De Lacoste</span>, Innovation Lab Manager @  <span class="company">Groupe RATP</span>
+                </p>
+                <div class="author-picture">
+                  <%= image_tag "homepage/pictures/thomas-de-lacoste.jpeg" %>
+                </div>
+              </div>
+            </div>
 
-        <div class="footer-testimony">
-          <p class="author">
-            <span class="name">Thomas De Lacoste</span>, Innovation Lab Manager @  <span class="company">Groupe RATP</span>
-          </p>
-          <div class="author-picture">
-            <%= image_tag "homepage/pictures/thomas-de-lacoste.jpeg" %>
+            <div class="carousel-item">
+              <p class="text">
+                “ Nous travaillons régulièrement avec Pitch Masters pour préparer nos entreprises aux grands évènements internationaux.
+                <br><br>
+                Leurs compétences, leur dynamisme et la pédagogie qu’ils mettent en œuvre permettent aux entreprises de gagner très rapidement en maturité sur leur pitch. L'évolution de celui-ci entre avant et après la formation est bluffante ! “
+              </p>
+
+              <div class="footer-testimony">
+                <p class="author">
+                  <span class="name">Arnaud Jehl</span>, Coordinateur filières @  <span class="company">CCI Nouvelle-Aquitaine</span>
+                </p>
+                <div class="author-picture">
+                  <%= image_tag "homepage/pictures/arnaud-jehl.jpeg" %>
+                </div>
+              </div>
+            </div>
           </div>
+
         </div>
+
+        <a class="carousel-control-prev" href="#carousel-testimony-homepage" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carousel-testimony-homepage" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+
       </div>
+
 
     </div>
   </div>

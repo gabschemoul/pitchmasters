@@ -25,4 +25,4 @@ test:
 production:
   <<: *default
   adapter: postgresql
-  database: pm_production_database
+  database: postgresql-concave-74318
